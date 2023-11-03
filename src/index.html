@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Project Starter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="TODO: A starter project for ..." />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Project Starter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="TODO: A starter project for ..." />
 
-  <body>
-    <!-- Your HTML goes here -->
-    <h1 class="display-2 text-center my-5 py-5">
-      <span class="d-block py-5">
-        <i class="bi bi-filetype-html text-primary"></i>
-        <i class="bi bi-filetype-css text-danger"></i>
-        <i class="bi bi-filetype-js text-success"></i>
-      </span>
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+</head>
 
-      Welcome to CS 2350!
-    </h1>
+<body>
 
-    <script type="module" src="./javascripts/main.js"></script>
-  </body>
+  <div class="container">
+    <div class="row col">
+      <h1>Top 10 movies</h1>
+    </div>
+    <form class="row">
+      <div class="col-9">
+        <input type="search" class="form-control" placeholder="Search...">
+      </div>
+      <div class="col-3">
+        <button type="button" class="btn btn-primary w-100">Search</button>
+      </div>
+    </form>
+    <div class="row my-5">
+      <div class="col-md-6">
+        <div class="row row-cols-5 row-cols-md-3">
+          <div class="col" id="m1"></div>
+          <div class="col" id="m2"></div>
+          <div class="col" id="m3"></div>
+          <div class="col" id="m4"></div>
+          <div class="col" id="m5"></div>
+          <div class="col" id="m6"></div>
+          <div class="col" id="m7"></div>
+          <div class="col" id="m8"></div>
+          <div class="col" id="m9"></div>
+          <div class="col" id="m10"></div>
+        </div>
+      </div>
+      <div class="col-md-6 featured">
+        Select a movie to display
+      </div>
+    </div>
+
+
+  </div>
+
+  <script type="module" src="./javascripts/main.js"></script>
+  <script type="module" src="./javascripts/movies.js"></script>
+</body>
+
 </html>
